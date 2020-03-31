@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		723F40B52418633E005175C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40B42418633E005175C1 /* AppDelegate.swift */; };
+		723F40B72418633E005175C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40B62418633E005175C1 /* SceneDelegate.swift */; };
+		723F40BA2418633E005175C1 /* Coupon_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 723F40B82418633E005175C1 /* Coupon_Manager.xcdatamodeld */; };
+		723F40BC2418633E005175C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40BB2418633E005175C1 /* ContentView.swift */; };
+		723F40BE24186344005175C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723F40BD24186344005175C1 /* Assets.xcassets */; };
+		723F40C124186344005175C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723F40C024186344005175C1 /* Preview Assets.xcassets */; };
+		723F40C424186344005175C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723F40C224186344005175C1 /* LaunchScreen.storyboard */; };
+		723F40CF24186344005175C1 /* Coupon_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40CE24186344005175C1 /* Coupon_ManagerTests.swift */; };
+		723F40DA24186345005175C1 /* Coupon_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40D924186345005175C1 /* Coupon_ManagerUITests.swift */; };
+		723F40E824186FA7005175C1 /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40E724186FA7005175C1 /* Coupon.swift */; };
+		724114BA24237EDF00EEC693 /* CodeScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724114B924237EDF00EEC693 /* CodeScan.swift */; };
+		724FB72F241B332500FE49A0 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 724FB72E241B332500FE49A0 /* CarBode */; };
+		724FB732241B511A00FE49A0 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 724FB731241B511A00FE49A0 /* CodeScanner */; };
+		72E08F902431C1750080752C /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E08F8F2431C1750080752C /* AddView.swift */; };
+		72E08F922431CA580080752C /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E08F912431CA580080752C /* CouponView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		723F40CB24186344005175C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 723F40A92418633E005175C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 723F40B02418633E005175C1;
+			remoteInfo = "Coupon Manager";
+		};
+		723F40D624186345005175C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 723F40A92418633E005175C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 723F40B02418633E005175C1;
+			remoteInfo = "Coupon Manager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		723F40B12418633E005175C1 /* Coupon Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coupon Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		723F40B42418633E005175C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		723F40B62418633E005175C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		723F40B92418633E005175C1 /* Coupon_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coupon_Manager.xcdatamodel; sourceTree = "<group>"; };
+		723F40BB2418633E005175C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		723F40BD24186344005175C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		723F40C024186344005175C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		723F40C324186344005175C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		723F40C524186344005175C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723F40CA24186344005175C1 /* Coupon ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coupon ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		723F40CE24186344005175C1 /* Coupon_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon_ManagerTests.swift; sourceTree = "<group>"; };
+		723F40D024186344005175C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723F40D524186345005175C1 /* Coupon ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coupon ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		723F40D924186345005175C1 /* Coupon_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon_ManagerUITests.swift; sourceTree = "<group>"; };
+		723F40DB24186345005175C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723F40E724186FA7005175C1 /* Coupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon.swift; sourceTree = "<group>"; };
+		724114B924237EDF00EEC693 /* CodeScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScan.swift; sourceTree = "<group>"; };
+		72E08F8F2431C1750080752C /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		72E08F912431CA580080752C /* CouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		723F40AE2418633E005175C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724FB732241B511A00FE49A0 /* CodeScanner in Frameworks */,
+				724FB72F241B332500FE49A0 /* CarBode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723F40C724186344005175C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723F40D224186344005175C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		723F40A82418633E005175C1 = {
+			isa = PBXGroup;
+			children = (
+				723F40B32418633E005175C1 /* Coupon Manager */,
+				723F40CD24186344005175C1 /* Coupon ManagerTests */,
+				723F40D824186345005175C1 /* Coupon ManagerUITests */,
+				723F40B22418633E005175C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		723F40B22418633E005175C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				723F40B12418633E005175C1 /* Coupon Manager.app */,
+				723F40CA24186344005175C1 /* Coupon ManagerTests.xctest */,
+				723F40D524186345005175C1 /* Coupon ManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		723F40B32418633E005175C1 /* Coupon Manager */ = {
+			isa = PBXGroup;
+			children = (
+				723F40B42418633E005175C1 /* AppDelegate.swift */,
+				723F40B62418633E005175C1 /* SceneDelegate.swift */,
+				723F40BB2418633E005175C1 /* ContentView.swift */,
+				723F40E724186FA7005175C1 /* Coupon.swift */,
+				72E08F8F2431C1750080752C /* AddView.swift */,
+				724114B924237EDF00EEC693 /* CodeScan.swift */,
+				72E08F912431CA580080752C /* CouponView.swift */,
+				723F40BD24186344005175C1 /* Assets.xcassets */,
+				723F40C224186344005175C1 /* LaunchScreen.storyboard */,
+				723F40C524186344005175C1 /* Info.plist */,
+				723F40B82418633E005175C1 /* Coupon_Manager.xcdatamodeld */,
+				723F40BF24186344005175C1 /* Preview Content */,
+			);
+			path = "Coupon Manager";
+			sourceTree = "<group>";
+		};
+		723F40BF24186344005175C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				723F40C024186344005175C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		723F40CD24186344005175C1 /* Coupon ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				723F40CE24186344005175C1 /* Coupon_ManagerTests.swift */,
+				723F40D024186344005175C1 /* Info.plist */,
+			);
+			path = "Coupon ManagerTests";
+			sourceTree = "<group>";
+		};
+		723F40D824186345005175C1 /* Coupon ManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				723F40D924186345005175C1 /* Coupon_ManagerUITests.swift */,
+				723F40DB24186345005175C1 /* Info.plist */,
+			);
+			path = "Coupon ManagerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		723F40B02418633E005175C1 /* Coupon Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723F40DE24186345005175C1 /* Build configuration list for PBXNativeTarget "Coupon Manager" */;
+			buildPhases = (
+				723F40AD2418633E005175C1 /* Sources */,
+				723F40AE2418633E005175C1 /* Frameworks */,
+				723F40AF2418633E005175C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coupon Manager";
+			packageProductDependencies = (
+				724FB72E241B332500FE49A0 /* CarBode */,
+				724FB731241B511A00FE49A0 /* CodeScanner */,
+			);
+			productName = "Coupon Manager";
+			productReference = 723F40B12418633E005175C1 /* Coupon Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		723F40C924186344005175C1 /* Coupon ManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723F40E124186345005175C1 /* Build configuration list for PBXNativeTarget "Coupon ManagerTests" */;
+			buildPhases = (
+				723F40C624186344005175C1 /* Sources */,
+				723F40C724186344005175C1 /* Frameworks */,
+				723F40C824186344005175C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				723F40CC24186344005175C1 /* PBXTargetDependency */,
+			);
+			name = "Coupon ManagerTests";
+			productName = "Coupon ManagerTests";
+			productReference = 723F40CA24186344005175C1 /* Coupon ManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		723F40D424186344005175C1 /* Coupon ManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723F40E424186345005175C1 /* Build configuration list for PBXNativeTarget "Coupon ManagerUITests" */;
+			buildPhases = (
+				723F40D124186344005175C1 /* Sources */,
+				723F40D224186344005175C1 /* Frameworks */,
+				723F40D324186344005175C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				723F40D724186345005175C1 /* PBXTargetDependency */,
+			);
+			name = "Coupon ManagerUITests";
+			productName = "Coupon ManagerUITests";
+			productReference = 723F40D524186345005175C1 /* Coupon ManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		723F40A92418633E005175C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Miguel Cabrera";
+				TargetAttributes = {
+					723F40B02418633E005175C1 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					723F40C924186344005175C1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 723F40B02418633E005175C1;
+					};
+					723F40D424186344005175C1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 723F40B02418633E005175C1;
+					};
+				};
+			};
+			buildConfigurationList = 723F40AC2418633E005175C1 /* Build configuration list for PBXProject "Coupon Manager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 723F40A82418633E005175C1;
+			packageReferences = (
+				724FB72D241B332500FE49A0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+				724FB730241B511A00FE49A0 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
+			productRefGroup = 723F40B22418633E005175C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				723F40B02418633E005175C1 /* Coupon Manager */,
+				723F40C924186344005175C1 /* Coupon ManagerTests */,
+				723F40D424186344005175C1 /* Coupon ManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		723F40AF2418633E005175C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723F40C424186344005175C1 /* LaunchScreen.storyboard in Resources */,
+				723F40C124186344005175C1 /* Preview Assets.xcassets in Resources */,
+				723F40BE24186344005175C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723F40C824186344005175C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723F40D324186344005175C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		723F40AD2418633E005175C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723F40E824186FA7005175C1 /* Coupon.swift in Sources */,
+				723F40BA2418633E005175C1 /* Coupon_Manager.xcdatamodeld in Sources */,
+				723F40B52418633E005175C1 /* AppDelegate.swift in Sources */,
+				724114BA24237EDF00EEC693 /* CodeScan.swift in Sources */,
+				72E08F902431C1750080752C /* AddView.swift in Sources */,
+				723F40BC2418633E005175C1 /* ContentView.swift in Sources */,
+				72E08F922431CA580080752C /* CouponView.swift in Sources */,
+				723F40B72418633E005175C1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723F40C624186344005175C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723F40CF24186344005175C1 /* Coupon_ManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723F40D124186344005175C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723F40DA24186345005175C1 /* Coupon_ManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		723F40CC24186344005175C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 723F40B02418633E005175C1 /* Coupon Manager */;
+			targetProxy = 723F40CB24186344005175C1 /* PBXContainerItemProxy */;
+		};
+		723F40D724186345005175C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 723F40B02418633E005175C1 /* Coupon Manager */;
+			targetProxy = 723F40D624186345005175C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		723F40C224186344005175C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				723F40C324186344005175C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		723F40DC24186345005175C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		723F40DD24186345005175C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		723F40DF24186345005175C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Coupon Manager/Preview Content\"";
+				DEVELOPMENT_TEAM = KB78WW3NR2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Coupon Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Apollos.Coupon-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		723F40E024186345005175C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Coupon Manager/Preview Content\"";
+				DEVELOPMENT_TEAM = KB78WW3NR2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Coupon Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Apollos.Coupon-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		723F40E224186345005175C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coupon ManagerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Apollos.Coupon-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coupon Manager.app/Coupon Manager";
+			};
+			name = Debug;
+		};
+		723F40E324186345005175C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coupon ManagerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Apollos.Coupon-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coupon Manager.app/Coupon Manager";
+			};
+			name = Release;
+		};
+		723F40E524186345005175C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coupon ManagerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Apollos.Coupon-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coupon Manager";
+			};
+			name = Debug;
+		};
+		723F40E624186345005175C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coupon ManagerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Apollos.Coupon-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coupon Manager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		723F40AC2418633E005175C1 /* Build configuration list for PBXProject "Coupon Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723F40DC24186345005175C1 /* Debug */,
+				723F40DD24186345005175C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		723F40DE24186345005175C1 /* Build configuration list for PBXNativeTarget "Coupon Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723F40DF24186345005175C1 /* Debug */,
+				723F40E024186345005175C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		723F40E124186345005175C1 /* Build configuration list for PBXNativeTarget "Coupon ManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723F40E224186345005175C1 /* Debug */,
+				723F40E324186345005175C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		723F40E424186345005175C1 /* Build configuration list for PBXNativeTarget "Coupon ManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723F40E524186345005175C1 /* Debug */,
+				723F40E624186345005175C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		724FB72D241B332500FE49A0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				branch = 1.4.0;
+				kind = branch;
+			};
+		};
+		724FB730241B511A00FE49A0 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		724FB72E241B332500FE49A0 /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 724FB72D241B332500FE49A0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
+		};
+		724FB731241B511A00FE49A0 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 724FB730241B511A00FE49A0 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		723F40B82418633E005175C1 /* Coupon_Manager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				723F40B92418633E005175C1 /* Coupon_Manager.xcdatamodel */,
+			);
+			currentVersion = 723F40B92418633E005175C1 /* Coupon_Manager.xcdatamodel */;
+			path = Coupon_Manager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 723F40A92418633E005175C1 /* Project object */;
+}
