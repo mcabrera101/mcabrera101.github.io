@@ -12,11 +12,14 @@ struct CouponView: View {
     @EnvironmentObject var coupons: Coupons
     @EnvironmentObject var cform: Tog
     
+
+    
     
 
 
 
     var body: some View {
+//        NavigationLink(destination: DetailView(), isActive: !coupons.coupons.isEmpty){
         
                 List{
                     ForEach(coupons.coupons) { coupon in
@@ -37,8 +40,9 @@ struct CouponView: View {
                                 Text("$\(coupon.value)")
                                 .foregroundColor(.green)
                         }
-                    }.onDelete(perform: deleteItems)
-                }        
+                    }.onDelete(perform: coupons.deleteItems)
+        }
+        
     }
 }
 

@@ -8,7 +8,9 @@
 
 import SwiftUI
 class Tog: ObservableObject{
+    @EnvironmentObject var coupons: Coupons
     @Published var isShowingCouponForm : Bool = false
+    @Published var Empty: Bool = false
 }
 
 struct ContentView: View {
@@ -28,9 +30,12 @@ struct ContentView: View {
 
             let couponNum = code
             let currCpn = Coupon()
-            currCpn.barcode = Int(couponNum) ?? 0
+            currCpn.barcode = couponNum
+           
+
             coupons.process(currCpn)
-            print("added coupon")
+           
+
             
             
             
@@ -54,9 +59,10 @@ struct ContentView: View {
             
             
             
-                
+           
             .navigationBarTitle("Coupons")
-            .navigationBarItems(trailing: Button(action: {
+                    
+                    .navigationBarItems( leading: EditButton(), trailing: Button(action: {
                 self.isShowingScanner = true
 
             }) {
@@ -64,11 +70,11 @@ struct ContentView: View {
                     .accentColor(.green)
                 Text("Scan")
                     .accentColor(.green)
-                
+
             }) .sheet(isPresented: $isShowingScanner){
-                    
+
                     CodeScannerView(codeTypes: [ .qr], simulatedData: "1800909090", completion: self.handleScan)
-                
+
             }
         }
                     

@@ -11,31 +11,53 @@ import SwiftUI
 struct AddView: View {
     @EnvironmentObject var coupons: Coupons
     @EnvironmentObject var cform : Tog
+     
 
-    
+   
     
 
 
     var body: some View {
         
         NavigationView{
-            Form {
-                Section{
-                    Text("your coupon code: \(coupons.queue[0].barcode)")
-                    TextField("Name", text: $coupons.queue[0].name)
-                    TextField("Description", text: $coupons.queue[0].description)
-                    TextField("Expiration Date", text: $coupons.queue[0].expiration)
-                    TextField("Worth", text: $coupons.queue[0].value)
-                }
-                Section{
-                    Button("Add Coupon"){
-                        self.cform.isShowingCouponForm = false
-                        self.coupons.add(self.coupons.queue[0])
+            VStack(){
+                Form {
+                        Section(header: Text("Add Coupon")){
+                            HStack{
+                                Image(systemName: "barcode")
+                                Text("\(coupons.queue[0].barcode)")
+                              
+                                
+                            }
+                            
+                            TextField("Name", text: $coupons.queue[0].name)
+                            TextField("Description", text: $coupons.queue[0].description)
+                            
+                            DatePicker("Expires:", selection:$coupons.queue[0].expiration,  in: Date()... , displayedComponents: .date)
+                            TextField("Worth", text: $coupons.queue[0].value)
+                        }
                     }
-                }
-            }.navigationBarTitle("Add Coupon")
-        }
-        
+                    
+
+                    HStack{
+                            Section{
+                                Button("Add Coupon", action:{
+                                    self.cform.isShowingCouponForm = false
+                                    self.coupons.add(self.coupons.queue[0])
+                                })
+                            }
+                    
+                            Section{
+                                Button ( "Cancel", action:{
+                                    self.cform.isShowingCouponForm.toggle()
+                                })
+                            }
+                        
+                    }
+                    Spacer()
+            }
+            
+        }.navigationBarHidden(true)
     }
 }
 struct AddView_Previews: PreviewProvider {

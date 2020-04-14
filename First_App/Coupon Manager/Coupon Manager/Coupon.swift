@@ -7,12 +7,16 @@
 //
 
 import SwiftUI
-class Coupon: Identifiable,Codable, ObservableObject{
+class Coupon: Identifiable,Codable,Equatable, ObservableObject{
+    static func == (lhs: Coupon, rhs: Coupon) -> Bool {
+        return lhs.name == rhs.name && lhs.barcode == rhs.barcode && lhs.id == rhs.id && lhs.value == rhs.value && lhs.expiration == rhs.expiration && lhs.description == rhs.description
+    }
+    
     var name: String = ""
-    var barcode: Int = 0
+    var barcode: String = " "
     var id = UUID()
     var value: String = ""
-    var expiration: String = ""
+    var expiration = Date()
     var description: String = ""
 
 }
@@ -41,10 +45,16 @@ class Coupons: ObservableObject{
         coupons.append(coupon)
         save()
     }
-    func remove(coupons: Coupons) {
-        if let index = coupons.firstIndex(of: coupons) {
+    func remove(coupon: Coupon) {
+        if let index = coupons.firstIndex(of: coupon) {
             coupons.remove(at: index)
         }
+        UserDefaults.standard.removeObject(forKey: Self.saveKey)
+    }
+    
+    func deleteItems(at offsets: IndexSet) {
+        coupons.remove(atOffsets: offsets)
+        save()
     }
     
     func process (_ coupon: Coupon){

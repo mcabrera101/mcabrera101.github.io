@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720A6EDF2442778C006886D0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6EDE2442778C006886D0 /* DetailView.swift */; };
+		720A6EE12442779D006886D0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A6EE02442779D006886D0 /* SettingsView.swift */; };
 		723F40B52418633E005175C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40B42418633E005175C1 /* AppDelegate.swift */; };
 		723F40B72418633E005175C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F40B62418633E005175C1 /* SceneDelegate.swift */; };
 		723F40BA2418633E005175C1 /* Coupon_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 723F40B82418633E005175C1 /* Coupon_Manager.xcdatamodeld */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		720A6EDE2442778C006886D0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		720A6EE02442779D006886D0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		723F40B12418633E005175C1 /* Coupon Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coupon Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723F40B42418633E005175C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723F40B62418633E005175C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				72E08F912431CA580080752C /* CouponView.swift */,
 				72E08F8F2431C1750080752C /* AddView.swift */,
 				723F40E724186FA7005175C1 /* Coupon.swift */,
+				720A6EDE2442778C006886D0 /* DetailView.swift */,
+				720A6EE02442779D006886D0 /* SettingsView.swift */,
 				724114B924237EDF00EEC693 /* CodeScan.swift */,
 				723F40BD24186344005175C1 /* Assets.xcassets */,
 				723F40C224186344005175C1 /* LaunchScreen.storyboard */,
@@ -300,12 +306,14 @@
 				723F40E824186FA7005175C1 /* Coupon.swift in Sources */,
 				723F40BA2418633E005175C1 /* Coupon_Manager.xcdatamodeld in Sources */,
 				724D51B32437F292003C27B7 /* AppView.swift in Sources */,
+				720A6EDF2442778C006886D0 /* DetailView.swift in Sources */,
 				723F40B52418633E005175C1 /* AppDelegate.swift in Sources */,
 				724114BA24237EDF00EEC693 /* CodeScan.swift in Sources */,
 				72E08F902431C1750080752C /* AddView.swift in Sources */,
 				723F40BC2418633E005175C1 /* ContentView.swift in Sources */,
 				72E08F922431CA580080752C /* CouponView.swift in Sources */,
 				723F40B72418633E005175C1 /* SceneDelegate.swift in Sources */,
+				720A6EE12442779D006886D0 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
